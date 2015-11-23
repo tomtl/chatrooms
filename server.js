@@ -58,6 +58,10 @@ var server = http.createServer(function(request, response){
 
 // Start the HTTP server
 var port = process.env.PORT
-server.listen(port, function(){
+server.listen(port, function() {
   console.log("Server listening on port " + port);
 });
+
+// Socket.IO server
+var chatServer = require('./lib/chat_server');
+chatServer.listen(server);
