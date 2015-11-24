@@ -37,7 +37,7 @@ $(document).ready(function(){
     var message;
 
     if (result.success) {
-      message = "You are no known as " + result.name + ".";
+      message = "You are now known as " + result.name + ".";
     } else {
       message = result.message;
     }
